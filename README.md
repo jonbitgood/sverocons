@@ -1,40 +1,20 @@
-# create-svelte
+# Sverocons
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+A simple svelte wrapper for the <a href="https://heroicons.com/" class="text-purple-800 bold">Heroicons Library</a> taking inspiration from the 
+<a href="https://svelte.recipes/components/icon/">component approach</a> to svg icons by <a href="https://github.com/Wattenberger">Amelia Wattenberger</a>.
 
-## Creating a project
+## Using an Icon
 
-If you're seeing this, you've probably already done this step. Congrats!
+All icons can receive three different inputs:
 
-```bash
-# create a new project in the current directory
-npm init svelte@next
+- name
+- type
+- direction
 
-# create a new project in my-app
-npm init svelte@next my-app
+Only Name is required with type defaulting to `outline` and and direction to `n`.
+All directional icons have been removed IE arrow-right where they were identical.
+The styles default to `h-6 w-6`, but this can be overridden by adding in a class.
+
+```jsx
+<Icon name="arrow" type="solid" direction="w" class="h-8 w-8" />
 ```
-
-> Note: the `@next` is temporary
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
