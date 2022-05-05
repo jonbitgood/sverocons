@@ -1,6 +1,7 @@
 {
   "name": "sverocons",
   "version": "0.0.1",
+  "main": "./src/index.js",
   "scripts": {
     "dev": "svelte-kit dev",
     "build": "svelte-kit build",
@@ -11,6 +12,7 @@
   },
   "devDependencies": {
     "@sveltejs/adapter-auto": "next",
+    "@sveltejs/adapter-static": "^1.0.0-next.29",
     "@sveltejs/kit": "next",
     "prettier": "^2.5.1",
     "prettier-plugin-svelte": "^2.5.0",
