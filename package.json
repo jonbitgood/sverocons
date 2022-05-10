@@ -2,6 +2,9 @@
   "name": "sverocons",
   "version": "0.0.1",
   "main": "./src/index.js",
+  "module": "./src/index.js",
+  "svelte": "./src/index.js",
+  "repository": "git://github.com/jonbitgood/sverocons.git",
   "scripts": {
     "dev": "svelte-kit dev",
     "build": "svelte-kit build",
